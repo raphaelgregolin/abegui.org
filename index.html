@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>ABEGUI | Associação Beneficente Guilhermina Maria de Jesus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- SCRIPTS -->
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+    <script src="js/superfish.min.js" type="text/javascript"></script>
+    <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.js" type="text/javascript"></script>
+    <script src="js/jquery.mb.YTPlayer.js" type="text/javascript"></script>
+    <script src="js/animate.js" type="text/javascript"></script>
+    <script src="js/jquery.BlackAndWhite.js"></script>
+    <script src="js/myscript.js" type="text/javascript"></script>
+    <script>
+
+        //PrettyPhoto
+        jQuery(document).ready(function() {
+            $("a[rel^='prettyPhoto']").prettyPhoto();
+        });
+
+        //BlackAndWhite
+        $(window).load(function(){
+            $('.client_img').BlackAndWhite({
+                hoverEffect : true, // default true
+                // set the path to BnWWorker.js for a superfast implementation
+                webworkerPath : false,
+                // for the images with a fluid width and height
+                responsive:true,
+                // to invert the hover effect
+                invertHoverEffect: false,
+                // this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+                intensity:1,
+                speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+                    fadeIn: 300, // 200ms for fadeIn animations
+                    fadeOut: 300 // 800ms for fadeOut animations
+                },
+                onImageReady:function(img) {
+                    // this callback gets executed anytime an image is converted
+                }
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+    <!-- PAGE -->
+    <div id="page">
+
+        <!-- HEADER -->
+        <header>
+
+            <!-- MENU BLOCK -->
+            <div class="menu_block">
+
+                <!-- CONTAINER -->
+                <div class="container clearfix">
+
+                    <!-- LOGO -->
+                    <div class="logo pull-left">
+                        <a href="index.html">
+                            <img src="images/logo-abegui.png" alt="ABEGUI | Associação Beneficente Guilhermina Maria de Jesus">
+                        </a>
+                    </div><!-- //LOGO -->
+
+                    <!-- MENU -->
+                    <div class="pull-right">
+                        <nav class="navmenu center">
+                            <ul>
+                                <li class="first active scroll_btn"><a href="#home">Início</a></li>
+                                <li class="scroll_btn"><a href="#about">Sobre</a></li>
+                                <li class="scroll_btn"><a href="#doacoes">Doações</a></li>
+                                <li class="scroll_btn"><a href="#bazar">Bazar</a></li>
+                                <li class="scroll_btn"><a href="#voluntarios">Voluntários</a></li>
+                                <!-- <li><a href="blog.html">Blog</a></li> -->
+                                <li class="scroll_btn last"><a href="#contacts">Contato</a></li>
+                                <li><a href="https://www.facebook.com/AssociacaoBeneficenteABEGUI/" target="blank"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div><!-- //MENU -->
+                </div><!-- //MENU BLOCK -->
+            </div><!-- //CONTAINER -->
+        </header><!-- //HEADER -->
+
+
+        <!-- HOME -->
+        <section id="home" class="padbot0">
+
+            <!-- TOP SLIDER -->
+            <div class="flexslider top_slider">
+                <ul class="slides">
+                    <li class="slide1">
+                        <div class="flex_caption1">
+                            <p class="title1 captionDelay2 FromTop">Recuperação</p>
+                            <p class="title2 captionDelay4 FromTop">e Reintegração</p>
+                            <p class="title3 captionDelay6 FromTop">Social</p>
+                            <p class="title4 captionDelay7 FromBottom">Oferecemos abrigo com dedicação e carinho para pessoas em situação de vulnerabilidade social e econômica.</p>
+                        </div>
+                        <a class="slide_btn FromRight" href="#about">Saiba Mais</a>
+                    <li class="slide2">
+                        <div class="flex_caption1">
+                            <p class="title1 captionDelay6 FromLeft">Ajude</p>
+                            <p class="title2 captionDelay4 FromLeft">a Transformar</p>
+                            <p class="title3 captionDelay2 FromLeft">Vidas</p>
+                            <p class="title4 captionDelay7 FromLeft">Sua contribuição é muito importante para que continuemos cuidando dos moradores que mais precisam.</p>
+                        </div>
+                        <a class="slide_btn FromRight" href="#doacoes">Doe Agora</a>
+                    </li>
+                    <li class="slide3">
+                        <div class="flex_caption1">
+                            <p class="title1 captionDelay1 FromBottom">Dedique</p>
+                            <p class="title2 captionDelay2 FromBottom">seu Tempo</p>
+                            <p class="title3 captionDelay3 FromBottom">e Participe</p>
+                            <p class="title4 captionDelay5 FromBottom">Você pode nos ajudar desenvolvendo atividades, participando dos projetos existentes ou nos visitando.</p>
+                        </div>
+                        <a class="slide_btn FromRight" href="#bazar">Quero Ajudar</a>
+                    </li>
+                </ul>
+
+                <!-- VIDEO BACKGROUND -->
+              <a name="P2" class="player" id="P2" data-property="{videoURL:'BxF43wve21I',containment:'.top_slider',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
+              <!-- //VIDEO BACKGROUND -->
+            </div><!-- //TOP SLIDER -->
+        </section><!-- //HOME -->
+
+
+        <!-- ABOUT -->
+        <section id="about">
+
+            <!-- SERVICES -->
+            <div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+
+                <!-- CONTAINER -->
+                <div class="container">
+
+                    <!-- ROW -->
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                            <a class="services_item" href="javascript:void(0);">
+                                <p><b>Quem</b> Somos</p>
+                                <span>A Associação Beneficente Guilhermina Maria de Jesus (ABEGUI) é uma entidade sem fins lucrativos, fundada em 2000, que atua no regime de Serviço de Acolhimento Institucional de pessoas a partir de 18 anos de idade, em situação de vulnerabilidade social e/ou econômica, com vínculos familiares rompidos ou fragilizados, em situação de rua, desabrigo por abandono, migração, ausência de residência e/ou sem condições de autossustento.</span>
+                                <span>Atualmente a ONG está localizada na região da Chácara Santo Amaro, no extremo sul de São Paulo, e possui um espaço para pessoas que precisam de abrigo noturno, banho e alimentação diária, e mais do que isso, dedicação e carinho por parte do corpo de colaboradores. Para realizar o seu trabalho, a ONG depende de doações e da arrecadação de um bazar realizado no local, todas as quartas, sextas e domingos, por isso, a sua ajuda é muito importante.</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                            <a class="services_item" href="javascript:void(0);">
+                                <p><b>Nossa</b> História</p>
+                                <span>Fundada em 19 de março de 2000, a ONG é uma homenagem a Dona Guilhermina Maria de Jesus, falecida em 1971, que dedicou sua vida a cuidar de um irmão carente, criar seus nove filhos e à caridade. Mesmo sendo extremamente pobre, ela praticava trabalhos como parteira, enfermeira e acolhimento de órfãos da comunidade.</span>
+                                <span>Amigos e familiares fundaram a ONG, em 2000, como um abrigo gratuito destinado ao atendimento, acolhimento e recuperação de moradores de rua de São Paulo. Sediada em um terreno cedido para sua construção, a instituição, desde sua fundação, promove bazares três vezes por semana onde são vendidas as doações recebidas, que variam desde utensílios de cozinha, a roupas e móveis.</span>
+                                <span>Atualmente, a ONG opera no regime de Acolhimento Institucional, no qual as pessoas acolhidas só podem permanecer na ONG durante a noite para realizar suas refeições, receber cuidados e dormir. Devido a falta de investimentos e o alto custo do antigo regime de ILPI (Instituição de Longa Permanência), onde os acolhidos podiam residir no local. Entretanto, devido a essa alteração, a ONG continua mantendo os antigos residentes e recebendo novos membros no novo sistema. Mas isso não altera a dedicação e carinho oferecido a todas as pessoas que buscam um na ONG, um recomeço.</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                            <a class="services_item" href="javascript:void(0);">
+                                <p><b>Como</b> Fazemos</p>
+                                <span>A ABEGUI começou como um local para acolher e dar moradia a moradores de rua, entretanto, com as mudanças na legislação e falta de incentivo, desde 2015, ela passou a atuar em regime de Acolhimento Institucional, que recebe os moradores todos os dias a partir das 16h, fornece banho, comida e um local para dormir, e no dia seguinte eles são liberados novamente, podendo retornar no mesmo horário, todos os dias.</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                            <a class="services_item" href="javascript:void(0);">
+                                <p><b>Acolhemos</b></p>
+                                <span>Qualquer pessoa em situação vulnerável é bem-vinda a receber os cuidados da ONG.</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                            <a class="services_item" href="javascript:void(0);">
+                                <p><b>Cuidamos</b></p>
+                                <span>Todos recebem cuidados médicos, banho, roupas, alimentação e uma cama para dormir.</span>
+                            </a>
+                        </div>
+                    </div><!-- //ROW -->
+                </div><!-- //CONTAINER -->
+            </div><!-- //SERVICES -->
+
+            <!-- CLEAN CODE -->
+            <div id="doacoes" class="cleancode_block">
+
+                <!-- CONTAINER -->
+                <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+
+                    <!-- CASTOM TAB -->
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active clearfix" id="tab1">
+                            <p class="title"><b>Como</b> Ajudar?</p>
+                            <span>Sua doação é muito importante para que a ABEGUI continue cuidando dos moradores de rua da região do Grajaú e continue propagando a importância da caridade. Você pode contribuir de várias formas, é só escolher aquela que melhor se encaixa com o que você pode nos conceder.</span>
+                        </div>
+                        <div class="tab-pane fade clearfix" id="tab2">
+                            <p class="title"><b>PagSeguro</b></p>
+                            <span>Doe agora, sem sair de casa, é só clicar e usar PagSeguro para realizar uma transferência, no valor que desejar.</span><br/>
+                            <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                            <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" style="10px 0">
+                            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                            <input type="hidden" name="currency" value="BRL" />
+                            <input type="hidden" name="receiverEmail" value="abegui@abegui.org" />
+                            <input type="hidden" name="iot" value="button" />
+                            <input type="submit" name="submit" class="btn" value="Doar" />
+                            </form>
+                            <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+                            <span>Você também pode programar uma doação mensal para a ABEGUI, de no valor mínimo de R$10,00, direto no seu cartão de crédito!</span>
+                        </div>
+                        <div class="tab-pane fade clearfix" id="tab3">
+                            <p class="title"><b>Depósito Bancário</b> Pessoa Física</p>
+                            <span>Se você preferir, pode realizar um depósito bancário para a conta abaixo.</span><br/>
+                            <span>Associação Beneficente Guilhermina Maria de Jesus – ABEGUI</span><br/>
+                            <span>Banco Itaú</span><br/>
+                            <span>Agência: 2921</span><br/>
+                            <span>Conta Corrente: 09088-8</span><br/>
+                            <span>CNPJ: 04.084.230/0001-37</span>
+                        </div>
+                        <div class="tab-pane fade clearfix" id="tab4">
+                            <p class="title"><b>Depósito Bancário</b> Pessoa Jurídica</p>
+                            <span>É uma empresa e quer fazer uma doação? Você além de ajudar a ABEGUI, consegue usar as suas doações para deduzir até 2% do lucro operacional bruto. Essa operação é válida apenas para empresas em regime de lucro real, e o recibo pode ser solicitado entrando em contato conosco. As informações para depósito são:</span><br/>
+                            <span>Associação Beneficente Guilhermina Maria de Jesus – ABEGUI</span><br/>
+                            <span>Banco Itaú</span><br/>
+                            <span>Agência: 2921</span><br/>
+                            <span>Conta Corrente: 09088-8</span><br/>
+                            <span>CNPJ: 04.084.230/0001-37</span>
+                        </div>
+                        <div class="tab-pane fade clearfix" id="tab5">
+                            <p class="title"><b>Cadastre seu</b> Cupom Fiscal</p>
+                            <span>A ABEGUI está cadastrada no Programa da Nota Fiscal Paulista, onde você pode doar ou cadastrar seus cupons fiscais para a instituição e gerar créditos e a participação nos sorteios de prêmios do programa.</span><br/>
+                            <span>Consumidor, você pode acessar o site da <a href="http://www.nfp.fazenda.sp.gov.br">Nota Fiscal Paulista</a>, com sua senha pessoal, e cadastre cada nota em favor da ABEGUI.</span><br/>
+                            <span>Ou você pode nos enviar fotos dos seus cupons por whatsapp ou e-mail. Basta seguir os passos:</span><br/>
+                            <span>Tire uma foto do seu cupom fiscal (deixe bem visível o CNPJ, valor da compra, data de emissão e o COO).</span><br/>
+                            <span>Envie para a ABEGUI: Whatsapp: (11) 96094-9301 ou e-mail: <a href="mailto:abegui@abegui.org">abegui@abegui.org</a></span><br/>
+                            <span>Pronto! Você contribuiu para o trabalho social realizado pela ABEGUI (o cupom terá validade até o dia 20 do mês seguinte a compra).</span>
+                        </div>
+                        <div class="tab-pane fade clearfix" id="tab6">
+                            <p class="title"><b>Tenha nossa</b> caixinha</p>
+                            <span>Entre em contato conosco e receba nossa caixinha de doação para deixar nos seus check-outs.</span>
+                        </div>
+                    </div>
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active"><a class="i1" href="#tab1" data-toggle="tab"><i></i><span>Como Ajudar?</span></a></li>
+                        <li><a class="i2" href="#tab2" data-toggle="tab"><i></i><span>Pagseguro</span></a></li>
+                        <li><a class="i3" href="#tab3" data-toggle="tab"><i></i><span>Pessoa Física</span></a></li>
+                        <li><a class="i4" href="#tab4" data-toggle="tab"><i></i><span>Pessoa Jurírica</span></a></li>
+                        <li><a class="i5" href="#tab5" data-toggle="tab"><i></i><span>Cupom Fiscal</span></a></li>
+                        <li><a class="i6" href="#tab6" data-toggle="tab"><i></i><span>Caixinha</span></a></li>
+                    </ul><!-- CASTOM TAB -->
+                </div><!-- //CONTAINER -->
+            </div><!-- //CLEAN CODE -->
+
+            <!-- MULTI PURPOSE -->
+            <div id="bazar" class="purpose_block">
+
+                <!-- CONTAINER -->
+                <div class="container">
+
+                    <!-- ROW -->
+                    <div class="row">
+
+                        <div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
+                            <h2><b>Participe</b> do nosso Bazar</h2>
+                            <p>Como forma de manter o funcionamento de nossa instituição, realizamos todas as quartas, sextas e domingos, um bazar dos produtos recebidos por meio de doações. Os produtos comercializados variam entre roupas, sapatos, brinquedos, móveis em geral, utensílios domésticos, eletrodomésticos, roupas de cama, entre outros produtos.</p>
+                            <h3><b>Bazar</b> Especial</h3>
+                            <p>No segundo domingo de todo mês realizamos o Bazar Especial, onde são comercializados apenas produtos novos e semi-novos.</p>
+                            <h3><b>Como</b> Funciona</h3>
+                            <p>Antes da abertura do bazar, distribuímos fichas para aqueles que chegaram cedo. A abertura ocorro as 9h e a entrada dos compradores é liberada seguindo a ordem das fichas.</p>
+                            <p>Dias: Toda quarta, sexta e domingo.</p>
+                            <p>Horário: das 9h às 11h.</p>
+                            <p>Formas de Pagamento: Aceitamos pagamento em dinheiro, cartão de débito e crédito (valores acima de R$50,00). Além disso, parcelamos suas compras para valores acima de R$100,00.</p>
+                            <h3><b>Cantina</b> do Bazar</h3>
+                            <p>Durante todos os bazares oferecemos uma série de delícias para seu consumo:</p>
+                            <ul>
+                                <li>Pasteis de carne e queijo</li>
+                                <li>Bolo</li>
+                                <li>Pão com manteiga</li>
+                                <li>Café</li>
+                                <li>Refrigerantes</li>
+                                <li>Hot dog (no Bazar Especial)</li>
+                                <li>Canjica (no Bazar Especial)</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in hidden" data-appear-top-offset="-200" data-animated="fadeInRight">
+                            <img class="ipad_img1" src="images/img1.png" alt="" />
+                        </div>
+                    </div><!-- //ROW -->
+
+                    <!-- ROW -->
+                    <div id="voluntarios" class="row" style="margin-top: 100px;">
+
+                        <div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
+                            <h2><b>Seja Voluntário</b> você também!</h2>
+                            <p>Você pode nos ajudar doando seu tempo da maneira que preferir, seja para desenvolver alguma atividade, participar dos projetos já existentes ou apenas em visita a instituição. Para ser um voluntário ou fazer outros tipos de doações, entre em contato conosco.</p>
+                        </div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in hidden" data-appear-top-offset="-200" data-animated="fadeInRight">
+                            <img class="ipad_img1" src="images/img1.png" alt="" />
+                        </div>
+                    </div><!-- //ROW -->
+                </div><!-- //CONTAINER -->
+            </div><!-- //MULTI PURPOSE -->
+        </section><!-- //ABOUT -->
+
+
+        <!-- PROJECTS -->
+        <section id="projects" class="padbot20 hidden">
+
+            <!-- CONTAINER -->
+            <div class="container">
+                <h2><b>Featured</b> Works</h2>
+            </div><!-- //CONTAINER -->
+
+
+            <div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+                <!-- PROJECTS SLIDER -->
+                <div class="owl-demo owl-carousel projects_slider">
+
+                    <!-- work1 -->
+                    <div class="item">
+                        <div class="work_item">
+                            <div class="work_img">
+                                <img src="images/works/1.jpg" alt="" />
+                                <a class="zoom" href="images/works/1.jpg" rel="prettyPhoto[portfolio1]"></a>
+                            </div>
+                            <div class="work_description">
+                                <div class="work_descr_cont">
+                                    <a href="portfolio-post.html">Ginger Beast</a>
+                                    <span>17 March, 2041</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //work1 -->
+
+                    <!-- work2 -->
+                    <div class="item">
+                        <div class="work_item">
+                            <div class="work_img">
+                                <img src="images/works/2.jpg" alt="" />
+                                <a class="zoom" href="images/works/2.jpg" rel="prettyPhoto[portfolio1]"></a>
+                            </div>
+                            <div class="work_description">
+                                <div class="work_descr_cont">
+                                    <a href="portfolio-post.html">Ginger Beast</a>
+                                    <span>17 March, 2041</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //work2 -->
+
+                    <!-- work3 -->
+                    <div class="item">
+                        <div class="work_item">
+                            <div class="work_img">
+                                <img src="images/works/3.jpg" alt="" />
+                                <a class="zoom" href="images/works/3.jpg" rel="prettyPhoto[portfolio1]"></a>
+                            </div>
+                            <div class="work_description">
+                                <div class="work_descr_cont">
+                                    <a href="portfolio-post.html">Ginger Beast</a>
+                                    <span>17 March, 2041</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //work3 -->
+
+                    <!-- work4 -->
+                    <div class="item">
+                        <div class="work_item">
+                            <div class="work_img">
+                                <img src="images/works/4.jpg" alt="" />
+                                <a class="zoom" href="images/works/4.jpg" rel="prettyPhoto[portfolio1]"></a>
+                            </div>
+                            <div class="work_description">
+                                <div class="work_descr_cont">
+                                    <a href="portfolio-post.html">Ginger Beast</a>
+                                    <span>17 March, 2041</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //work4 -->
+
+                    <!-- work5 -->
+                    <div class="item">
+                        <div class="work_item">
+                            <div class="work_img">
+                                <img src="images/works/5.jpg" alt="" />
+                                <a class="zoom" href="images/works/5.jpg" rel="prettyPhoto[portfolio1]"></a>
+                            </div>
+                            <div class="work_description">
+                                <div class="work_descr_cont">
+                                    <a href="portfolio-post.html">Ginger Beast</a>
+                                    <span>17 March, 2041</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //work5 -->
+
+                    <!-- work6 -->
+                    <div class="item">
+                        <div class="work_item">
+                            <div class="work_img">
+                                <img src="images/works/6.jpg" alt="" />
+                                <a class="zoom" href="images/works/6.jpg" rel="prettyPhoto[portfolio1]"></a>
+                            </div>
+                            <div class="work_description">
+                                <div class="work_descr_cont">
+                                    <a href="portfolio-post.html">Ginger Beast</a>
+                                    <span>17 March, 2041</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //work6 -->
+
+                    <!-- work7 -->
+                    <div class="item">
+                        <div class="work_item">
+                            <div class="work_img">
+                                <img src="images/works/7.jpg" alt="" />
+                                <a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]"></a>
+                            </div>
+                            <div class="work_description">
+                                <div class="work_descr_cont">
+                                    <a href="portfolio-post.html">Ginger Beast</a>
+                                    <span>17 March, 2041</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //work7 -->
+                </div><!-- //PROJECTS SLIDER -->
+            </div>
+
+
+            <!-- OUR CLIENTS -->
+            <div class="our_clients">
+
+                <!-- CONTAINER -->
+                <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+
+                    <!-- ROW -->
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                            <img src="images/clients/1.jpg" alt="" />
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                            <img src="images/clients/2.jpg" alt="" />
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                            <img src="images/clients/3.jpg" alt="" />
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                            <img src="images/clients/4.jpg" alt="" />
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                            <img src="images/clients/5.jpg" alt="" />
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                            <img src="images/clients/6.jpg" alt="" />
+                        </div>
+                    </div><!-- //ROW -->
+                </div><!-- CONTAINER -->
+            </div><!-- //OUR CLIENTS -->
+        </section><!-- //PROJECTS -->
+
+
+        <!-- TEAM -->
+        <section id="team" class="hidden">
+
+            <!-- CONTAINER -->
+            <div class="container">
+                <h2><b>Our</b> Team</h2>
+
+                <!-- ROW -->
+                <div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+
+                    <!-- TEAM SLIDER -->
+                    <div class="owl-demo owl-carousel team_slider">
+
+                        <!-- crewman1 -->
+                        <div class="item">
+                            <div class="crewman_item">
+                                <div class="crewman">
+                                    <img src="images/team/1.jpg" alt="" />
+                                </div>
+                                <div class="crewman_descr center">
+                                    <div class="crewman_descr_cont">
+                                        <p>Sarah Brown</p>
+                                        <span>Director</span>
+                                    </div>
+                                </div>
+                                <div class="crewman_social">
+                                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                                    <a href="javascript:void(0);"><i class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- crewman1 -->
+
+                        <!-- crewman2 -->
+                        <div class="item">
+                            <div class="crewman_item">
+                                <div class="crewman">
+                                    <img src="images/team/2.jpg" alt="" />
+                                </div>
+                                <div class="crewman_descr center">
+                                    <div class="crewman_descr_cont">
+                                        <p>David Jones</p>
+                                        <span>Creative Director</span>
+                                    </div>
+                                </div>
+                                <div class="crewman_social">
+                                    <a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a>
+                                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                                    <a href="javascript:void(0);"><i class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- crewman1 -->
+
+                        <!-- crewman3 -->
+                        <div class="item">
+                            <div class="crewman_item">
+                                <div class="crewman">
+                                    <img src="images/team/3.jpg" alt="" />
+                                </div>
+                                <div class="crewman_descr center">
+                                    <div class="crewman_descr_cont">
+                                        <p>Kate Smith</p>
+                                        <span>Manager</span>
+                                    </div>
+                                </div>
+                                <div class="crewman_social">
+                                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                                    <a href="javascript:void(0);"><i class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- crewman3 -->
+
+                        <!-- crewman4 -->
+                        <div class="item">
+                            <div class="crewman_item">
+                                <div class="crewman">
+                                    <img src="images/team/4.jpg" alt="" />
+                                </div>
+                                <div class="crewman_descr center">
+                                    <div class="crewman_descr_cont">
+                                        <p>Peter Parker</p>
+                                        <span>Manager</span>
+                                    </div>
+                                </div>
+                                <div class="crewman_social">
+                                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                                    <a href="javascript:void(0);"><i class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- crewman4 -->
+
+                        <!-- crewman5 -->
+                        <div class="item">
+                            <div class="crewman_item">
+                                <div class="crewman">
+                                    <img src="images/team/5.jpg" alt="" />
+                                </div>
+                                <div class="crewman_descr center">
+                                    <div class="crewman_descr_cont">
+                                        <p>Jim Moss</p>
+                                        <span>Designer</span>
+                                    </div>
+                                </div>
+                                <div class="crewman_social">
+                                    <a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a>
+                                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                                    <a href="javascript:void(0);"><i class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- crewman5 -->
+
+                        <!-- crewman6 -->
+                        <div class="item">
+                            <div class="crewman_item">
+                                <div class="crewman">
+                                    <img src="images/team/6.jpg" alt="" />
+                                </div>
+                                <div class="crewman_descr center">
+                                    <div class="crewman_descr_cont">
+                                        <p>John Marks</p>
+                                        <span>Designer</span>
+                                    </div>
+                                </div>
+                                <div class="crewman_social">
+                                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                                    <a href="javascript:void(0);"><i class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- crewman6 -->
+
+                        <!-- crewman7 -->
+                        <div class="item">
+                            <div class="crewman_item">
+                                <div class="crewman">
+                                    <img src="images/team/7.jpg" alt="" />
+                                </div>
+                                <div class="crewman_descr center">
+                                    <div class="crewman_descr_cont">
+                                        <p>Joe Mades</p>
+                                        <span>Developer</span>
+                                    </div>
+                                </div>
+                                <div class="crewman_social">
+                                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                                    <a href="javascript:void(0);"><i class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- crewman7 -->
+
+                        <!-- crewman8 -->
+                        <div class="item">
+                            <div class="crewman_item">
+                                <div class="crewman">
+                                    <img src="images/team/8.jpg" alt="" />
+                                </div>
+                                <div class="crewman_descr center">
+                                    <div class="crewman_descr_cont">
+                                        <p>Julia Anderson</p>
+                                        <span>Developer</span>
+                                    </div>
+                                </div>
+                                <div class="crewman_social">
+                                    <a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a>
+                                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                                    <a href="javascript:void(0);"><i class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- crewman8 -->
+                    </div><!-- TEAM SLIDER -->
+                </div><!-- //ROW -->
+            </div><!-- //CONTAINER -->
+        </section><!-- //TEAM -->
+
+
+        <!-- NEWS -->
+        <section id="news" class="hidden">
+
+            <!-- CONTAINER -->
+            <div class="container">
+                <h2><b>Seja Voluntário</b> você também!</h2>
+
+                <!-- TESTIMONIALS -->
+                <div class="testimonials" data-appear-top-offset="-200" data-animated="fadeInUp">
+
+                    <!-- TESTIMONIALS SLIDER -->
+                    <div class="owl-demo owl-carousel testim_slider">
+
+                        <!-- TESTIMONIAL1 -->
+                        <div class="item">
+                            <div class="testim_content">Você pode nos ajudar doando seu tempo da maneira que preferir, seja para desenvolver alguma atividade, participar dos projetos já existentes ou apenas em visita a instituição. Para ser um voluntário ou fazer outros tipos de doações, entre em contato conosco.</div>
+                            <a class="btn btn-active" href="javascript:void(0);"><span data-hover="Yes I want it">Byu This theme</span></a>
+                            <a class="btn" href="javascript:void(0);">View more templates</a>
+                        </div><!-- TESTIMONIAL1 -->
+
+                        <!-- TESTIMONIAL2 -->
+                        <div class="item">
+                            <div class="testim_content">“There is nothing scary in the darkness, if you encounter it face-to-face. The inevitable price we pay for our happiness is eternal fear to lose it. When you start thinking a lot about your past, it becomes your present and you can't see your future without it.”</div>
+                            <div class="testim_author">—  Anna Balashova, <b>Philosopher</b></div>
+                        </div><!-- TESTIMONIAL2 -->
+
+                        <!-- TESTIMONIAL3 -->
+                        <div class="item">
+                            <div class="testim_content">“There is nothing scary in the darkness, if you encounter it face-to-face. The inevitable price we pay for our happiness is eternal fear to lose it. When you start thinking a lot about your past, it becomes your present and you can't see your future without it.”</div>
+                            <div class="testim_author">—  Anna Balashova, <b>Philosopher</b></div>
+                        </div><!-- TESTIMONIAL3 -->
+                    </div><!-- TESTIMONIALS SLIDER -->
+                </div><!-- //TESTIMONIALS -->
+
+                <!-- RECENT POSTS -->
+                <div class="row recent_posts" data-appear-top-offset="-200" data-animated="fadeInUp">
+                    <div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+                        <div class="post_item">
+                            <div class="post_item_img">
+                                <img src="images/blog/1.jpg" alt="" />
+                                <a class="link" href="blog-post.html"></a>
+                            </div>
+                            <div class="post_item_content">
+                                <a class="title" href="blog-post.html">Inteligent Transitions In UX Design</a>
+                                <ul class="post_item_inf">
+                                    <li><a href="javascript:void(0);">Anna</a> |</li>
+                                    <li><a href="javascript:void(0);">Photography</a> |</li>
+                                    <li><a href="javascript:void(0);">10 Comments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+                        <div class="post_item">
+                            <div class="post_item_img">
+                                <img src="images/blog/2.jpg" alt="" />
+                                <a class="link" href="blog-post.html"></a>
+                            </div>
+                            <div class="post_item_content">
+                                <a class="title" href="blog-post.html">Recent trends in storytelling</a>
+                                <ul class="post_item_inf">
+                                    <li><a href="javascript:void(0);">Anna</a> |</li>
+                                    <li><a href="javascript:void(0);">Web Design</a> |</li>
+                                    <li><a href="javascript:void(0);">No comment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+                        <div class="post_item">
+                            <div class="post_item_img">
+                                <img src="images/blog/3.jpg" alt="" />
+                                <a class="link" href="blog-post.html"></a>
+                            </div>
+                            <div class="post_item_content">
+                                <a class="title" href="blog-post.html">Supernatural FX Showreel</a>
+                                <ul class="post_item_inf">
+                                    <li><a href="javascript:void(0);">Anna</a> |</li>
+                                    <li><a href="javascript:void(0);">Creative</a> |</li>
+                                    <li><a href="javascript:void(0);">3 Comments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- RECENT POSTS -->
+            </div><!-- //CONTAINER -->
+        </section><!-- //NEWS -->
+    </div><!-- //PAGE -->
+
+    <!-- CONTACTS -->
+    <section id="contacts">
+    </section><!-- //CONTACTS -->
+
+    <!-- FOOTER -->
+    <footer>
+
+        <!-- CONTAINER -->
+        <div class="container">
+
+            <!-- ROW -->
+            <div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+
+                <div class="col-lg-4 col-md-4 col-sm-6 padbot30">
+                    <h4><b>Institucional</b></h4>
+                    <div class="recent_posts_small clearfix">
+                        <div class="post_item_content_small">
+                            <ul>
+                                <li class="first active scroll_btn"><a href="#home">Início</a></li>
+                                <li class="scroll_btn"><a href="#about">Sobre</a></li>
+                                <li class="scroll_btn"><a href="#doacoes">Doações</a></li>
+                                <li class="scroll_btn"><a href="#bazar">Bazar</a></li>
+                                <li class="scroll_btn"><a href="#voluntarios">Voluntários</a></li>
+                                <!-- <li><a href="blog.html">Blog</a></li> -->
+                                <li class="scroll_btn last"><a href="#contacts">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+                    <h4><b>Abegui</b></h4>
+                    <p>Telefones: 5974-9520 / 5974-9461 / 5974-9462</p>
+                    <p>Celulares: 96094-9301 (Oi) / 97721-8531 (Tim) / 97697-3649 (Claro) / 97523-2337 (Vivo)</p>
+                    <p>E-mail: abegui@abegui.org</p>
+                </div>
+
+                <div class="respond_clear"></div>
+
+                <div class="col-lg-4 col-md-4 padbot30">
+                    <h4><b>Contato</b></h4>
+
+                    <!-- CONTACT FORM -->
+                    <div class="span9 contact_form">
+                        <div id="note"></div>
+                        <div id="fields">
+                            <form id="contact-form-face" class="clearfix" method="post" action="https://formspree.io/abegui@abegui.org">
+                                <input type="hidden" name="_subject" value="Contato do site" />
+                                <input type="text" name="name" value="Seu nome" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+                                <textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Sua mensagem</textarea>
+                                <input type="text" name="_gotcha" style="display:none" />
+                                <input class="contact_btn" type="submit" value="Enviar" />
+                            </form>
+                        </div>
+                    </div><!-- //CONTACT FORM -->
+                </div>
+            </div><!-- //ROW -->
+            <div class="row copyright">
+                <div class="col-lg-12 text-center">
+
+                 <p>ABEGUI - Copyright © 2016 - Todos os Direitos reservados</p>
+                </div>
+
+            </div><!-- //ROW -->
+        </div><!-- //CONTAINER -->
+    </footer><!-- //FOOTER -->
+
+
+    <!-- MAP -->
+    <div id="map">
+        <a class="map_hide" href="javascript:void(0);"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
+        <iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed"></iframe>
+    </div><!-- //MAP -->
+
+</div>
+</body>
+</html>
