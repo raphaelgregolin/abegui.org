@@ -33,7 +33,6 @@
     <script src="js/superfish.min.js" type="text/javascript"></script>
     <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
     <script src="js/owl.carousel.js" type="text/javascript"></script>
-    <script src="js/jquery.mb.YTPlayer.js" type="text/javascript"></script>
     <script src="js/animate.js" type="text/javascript"></script>
     <script src="js/jquery.BlackAndWhite.js"></script>
     <script src="js/myscript.js" type="text/javascript"></script>
@@ -149,9 +148,7 @@
                     </li>
                 </ul>
 
-                <!-- VIDEO BACKGROUND -->
-              <a name="P2" class="player" id="P2" data-property="{videoURL:'BxF43wve21I',containment:'.top_slider',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
-              <!-- //VIDEO BACKGROUND -->
+
             </div><!-- //TOP SLIDER -->
         </section><!-- //HOME -->
 
@@ -225,7 +222,7 @@
                             <input type="hidden" name="currency" value="BRL" />
                             <input type="hidden" name="receiverEmail" value="abegui@abegui.org" />
                             <input type="hidden" name="iot" value="button" />
-                            <input type="submit" name="submit" class="btn" value="Doar" />
+                            <input type="submit" name="submit" class="btn btn-pagseguro" value="Doar" />
                             </form>
                             <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
                             <span>Você também pode programar uma doação mensal para a ABEGUI, de no valor mínimo de R$10,00, direto no seu cartão de crédito!</span>
@@ -264,11 +261,19 @@
                     </div>
                     <ul id="myTab" class="nav nav-tabs">
                         <li class="active"><a class="i1" href="#tab1" data-toggle="tab"><i></i><span>Como Ajudar?</span></a></li>
-                        <li><a class="i2" href="#tab2" data-toggle="tab"><i></i><span>Pagseguro</span></a></li>
                         <li><a class="i3" href="#tab3" data-toggle="tab"><i></i><span>Pessoa Física</span></a></li>
                         <li><a class="i4" href="#tab4" data-toggle="tab"><i></i><span>Pessoa Jurírica</span></a></li>
                         <li><a class="i5" href="#tab5" data-toggle="tab"><i></i><span>Cupom Fiscal</span></a></li>
                         <li><a class="i6" href="#tab6" data-toggle="tab"><i></i><span>Caixinha</span></a></li>
+                        <li><!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                            <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" style="10px 0">
+                            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                            <input type="hidden" name="currency" value="BRL" />
+                            <input type="hidden" name="receiverEmail" value="abegui@abegui.org" />
+                            <input type="hidden" name="iot" value="button" />
+                            <input type="submit" name="submit" class="btn btn-pagseguro" value="Doar" />
+                            </form>
+                            <!-- FINAL FORMULARIO BOTAO PAGSEGURO --></li>
                     </ul><!-- CASTOM TAB -->
                 </div><!-- //CONTAINER -->
             </div><!-- //CLEAN CODE -->
@@ -305,8 +310,8 @@
                             </ul>
                         </div>
 
-                        <div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in hidden" data-appear-top-offset="-200" data-animated="fadeInRight">
-                            <img class="ipad_img1" src="images/img1.png" alt="" />
+                        <div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
+                            <img class="ipad_img1" src="images/nosso-bazar.jpg" alt="" />
                         </div>
                     </div><!-- //ROW -->
 
@@ -815,13 +820,6 @@
             </div><!-- //ROW -->
         </div><!-- //CONTAINER -->
     </footer><!-- //FOOTER -->
-
-
-    <!-- MAP -->
-    <div id="map">
-        <a class="map_hide" href="javascript:void(0);"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
-        <iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed"></iframe>
-    </div><!-- //MAP -->
 
 </div>
 </body>
