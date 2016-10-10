@@ -184,6 +184,20 @@ blockquote:before {content:'“'; position:absolute; left:15px; top:13px; font-s
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
+.btn-pagseguro {
+	margin: 0;
+	padding: inherit;
+	border:2px solid #ccc;
+	border-radius: 0;
+	box-shadow: none;
+	text-transform:uppercase;
+	font-weight: 900;
+	line-height: 20px;
+	font-size: 13px;
+	color:#999;
+	text-shadow: none;
+	background: #fff;
+}
 .btn:focus, .btn:hover {color:#333; border-color:#333;}
 
 .btn-active {background-color:#1c1c1c; color:#fff; border-color:#1c1c1c;}
@@ -462,7 +476,7 @@ header {
 /* __________ Clean Code __________ */
 .cleancode_block {
 	padding:96px 0 78px;
-	background-image:url(../images/clean_code_bg.jpg);
+	background-image:url(../images/como-ajudar.jpg);
 	background-size:cover;
 	background-position:0 0;
 	background-attachment:fixed !important;
@@ -486,7 +500,7 @@ header {
 	font-weight:300;
 	line-height:34px;
 	font-size:22px;
-	color:#999;
+	color:#fff;
 }
 .cleancode_block .tab-pane {
 	display:block;
@@ -547,6 +561,11 @@ header {
 .cleancode_block .nav-tabs li a.i4 i {background-image:url(../images/i4.png);}
 .cleancode_block .nav-tabs li a.i5 i {background-image:url(../images/i5.png);}
 .cleancode_block .nav-tabs li a.i6 i {background-image:url(../images/i6.png);}
+
+.btn-pagseguro {
+		width: 170px;
+		height: 170px;
+	}
 
 .nav-tabs li a:hover,
 .nav-tabs li a:focus {
@@ -1762,7 +1781,10 @@ input[type="color"]:focus {
 	.cleancode_block .nav-tabs li a i {background-position:0 -45px;}
 	.nav-tabs li a:hover i {background-position:0 -90px; transform:translateY(-5px); -o-transform:translateY(-5px); -ms-transform:translateY(-5px); -webkit-transform:translateY(-5px);}
 	.nav-tabs li.active a i {background-position:0 0; transform:translateY(-10px); -o-transform:translateY(-10px); -ms-transform:translateY(-10px); -webkit-transform:translateY(-10px);}
-
+	.btn-pagseguro {
+		width: 100px;
+		height: 100px;
+	}
 
 	.purpose_block {padding-top:35px;}
 	.purpose_block .ipad_img1 {margin-top:-50px;}
@@ -1876,7 +1898,10 @@ input[type="color"]:focus {
 	.cleancode_block .nav-tabs li a i {background-position:0 -45px;}
 	.nav-tabs li a:hover i {background-position:0 -90px; transform:translateY(-5px); -o-transform:translateY(-5px); -ms-transform:translateY(-5px); -webkit-transform:translateY(-5px);}
 	.nav-tabs li.active a i {background-position:0 0; transform:translateY(-10px); -o-transform:translateY(-10px); -ms-transform:translateY(-10px); -webkit-transform:translateY(-10px);}
-
+	.btn-pagseguro {
+		width: 120px;
+		height: 120px;
+	}
 
 	.purpose_block {padding-top:35px;}
 	.ipad_img_in {width:350px; margin:0 auto;}
